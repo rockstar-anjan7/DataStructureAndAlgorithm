@@ -6,7 +6,8 @@ struct Node
     int data;
     struct Node *next;
 };
-//  stuct Node *top=NULL;--> it is only when we use declare top as globally
+//  stuct Node *top=NULL;
+// --> it is only when we use declare top as globally
 
 void linkedListTraversal(struct Node *ptr)
 {
@@ -85,6 +86,20 @@ int pop(struct Node **top)
 //         return x;
 //     }
 // }--> it is only when we use declare top as globally
+// int peek(int pos){
+//     struct Node* ptr = top;
+//     for (int i = 0; (i < pos-1 && ptr!=NULL); i++)
+//     {
+//         ptr = ptr->next;
+//     }
+//     if(ptr!=NULL){
+//         return ptr->data;
+//     }
+//     else{
+//         return -1;
+//     }
+// }
+ 
 
 int main()
 {
